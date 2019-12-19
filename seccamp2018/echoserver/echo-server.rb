@@ -6,7 +6,7 @@ gate = TCPServer.open(port)
 
 sock = gate.accept
 gate.close
-
+ 
 while msg = sock.gets
 	sock.write(msg)
 	print("you get:", msg)
